@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<title>Destiny's Dice</title>
+	<style type="text/css">
+	body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("dice6.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+    color: orange;
+    font-family: Helvetica;
+    font-size: 50px,solid,bold,italic;
+    text-decoration: none;
+    
+}
+a:hover {
+  color: white;
+    font-size: 20px,solid,bold,italic;
+    text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="bg">
+<div class="container">
+<h1 style="text-align: center;font-family:arial;font-style: italic;color: white;">Destiny's Dice</h1><br>
+<form name="myForm">
+  <a href="about.html"><h2 style="font-style: italic; ">
+    How to Play?</h2></a>
+<h3 style="font-family:arial;font-style: italic;color: white;">Player's name</h3><br>
+<input type="text" id="pnm"><br>
+<h3 style="font-family:arial;font-style: italic;color: white;">Target score</h3><br>
+<input type="number" id="tscore"><br><br>
+<button type="button" class="btn btn-default btn-sm" class="btn btn-success" onclick="start()" ><span class="glyphicon glyphicon-play-circle"></span>Play Now!</button>
+
+</form>
+</div>
+</div>
+<script type="text/javascript" src="dice.js"></script>
+
+</body>
+</html>
